@@ -21,10 +21,10 @@ DELTA_T =  DATA['DeltaT'].astype(float).values
 DELTA_T = np.clip(DELTA_T, a_min=0, a_max=None)
 JP_FX =  DATA['JP_Fx'].astype(float).values   
 
-# variable a predecir 
+# value to predict 
 FLOW_SF = DATA['Flow'].astype(float).values.reshape(-1, 1)  
  
-# variables entrada 
+# input data
 DATA_TRAIN = [DNI_REAL, DNI_RAW, T_IN, T_OUT] 
 
 X = np.array(DATA_TRAIN).astype(float)
