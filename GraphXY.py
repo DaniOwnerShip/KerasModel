@@ -23,7 +23,7 @@ def plot_graph(DATA,  X, model):
     ax1.plot(DATA['Time'][:len(X)], model.predict(X), color='red', linewidth=3) 
 
     ax2 = ax1.twinx()
-    ax2.plot(DATA['Time'][:len(X)], dni[:len(X)], color='yellow', linewidth=2)
+    ax2.plot(DATA['Time'][:len(X)], dni[:len(X)], color='orange', linewidth=2)
     ax2.set_ylabel('DNI') 
     ax2.set_ylim(0, 1000)  
 
