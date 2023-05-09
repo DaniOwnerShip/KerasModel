@@ -1,13 +1,11 @@
-import tensorflow as tf
 from tensorflow import keras
 import pandas as pd
 import numpy as np
-from keras.callbacks import TensorBoard
 from sklearn.model_selection import train_test_split 
-from GraphXY import plot_graph
-from keras import regularizers 
- 
-  
+from keras.callbacks import TensorBoard
+from GraphXY import plot_graph  
+
+
 DATA = pd.read_csv('./dataCS.csv', delimiter=';', na_values=['NaN'])
 
 PREASSURE_IN =  DATA['PressureIN'].astype(float).values 
